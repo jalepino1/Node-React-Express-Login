@@ -1,7 +1,8 @@
 on: push
 jobs:
   first-job:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+    container: node:18.18.2
     steps:
       - run: node --version
       - run: npm --version
